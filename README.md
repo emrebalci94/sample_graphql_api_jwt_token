@@ -1,10 +1,7 @@
-Sample graphql api
+## # **Sample Queries**
+**Query 1**
 
-Sample Queries:
-
-Query 1:
-
-{"query":
+`{"query":
  "query{ 
  	 Materials{
 	Brand{
@@ -14,12 +11,12 @@ Query 1:
  	}
   }" 
 }
+`
 
-Query 2:
+**Query 2**
 
-{"query":
+`{"query":
  "query
- 
  	getMeterialByBrandId($Id:Int!){
  	MeterialByBrandId(Id:$Id){
  		Name
@@ -28,16 +25,15 @@ Query 2:
  			Name
  		}
  	}
- 
   }" ,
    	"variables":{
    		"Id":8
    	}
-}
+}`
 
-Query 3:
+**Query 3**
 
-{"query":
+`{"query":
  "query
  	getMeterialByBrandId($Id:Int!){
  	MeterialByBrandId(Id:$Id){
@@ -55,4 +51,4 @@ Query 3:
    		"Id":12
    	}
 }
-
+`
