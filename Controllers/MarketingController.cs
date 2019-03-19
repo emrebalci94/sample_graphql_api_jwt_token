@@ -45,7 +45,7 @@ namespace sample_graphql_api.Controllers
                     return BadRequest(result);
                 }
 
-                return Ok(result);
+                return Ok(result.Data);
             }
             catch (Exception ex)
             {
