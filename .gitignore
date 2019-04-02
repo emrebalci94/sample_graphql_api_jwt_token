@@ -4,7 +4,7 @@ project.lock.json
 .DS_Store
 *.pyc
 nupkg/
-
+.sonarqube
 # Visual Studio Code
 .vscode
 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using GraphQL;
 using GraphQL.Conversion;
 using GraphQL.Types;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using sample_graphql_api.Graphql;
 using sample_graphql_api.Helpers;
@@ -14,6 +15,7 @@ namespace sample_graphql_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MarketingController : ControllerBase
     {
         private readonly IDocumentExecuter _documentExecuter;
